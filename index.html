@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS-Calculator</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main-wrapper">
+            <h1 class="header">Javascript Calculator</h1>
+
+            <div class="main-calc">
+                <form class="calc-output">
+                    <input type="text" id="display" disabled>
+                </form>
+
+                <div class="calc-btns">
+                    
+                    <div class="keys" onclick="toDisplay('C')">C</div>
+                    <div class="keys" onclick="backspace()">CE</div>
+                    <div class="keys" onclick="square()">x^2</div>
+                    <div class="keys" onclick="toDisplay('*')">*</div>
+
+                    <div class="keys" onclick="toDisplay('7')">7</div>
+                    <div class="keys" onclick="toDisplay('8')">8</div>
+                    <div class="keys" onclick="toDisplay('9')">9</div>
+                    <div class="keys" onclick="toDisplay('/')">/</div>
+
+                    <div class="keys" onclick="toDisplay('4')">4</div>
+                    <div class="keys" onclick="toDisplay('5')">5</div>
+                    <div class="keys" onclick="toDisplay('6')">6</div>
+                    <div class="keys" onclick="toDisplay('+')">+</div>
+
+                    <div class="keys" onclick="toDisplay('1')">1</div>
+                    <div class="keys" onclick="toDisplay('2')">2</div>
+                    <div class="keys" onclick="toDisplay('3')">3</div>
+                    <div class="keys" onclick="toDisplay('-')">-</div>
+
+                    <div class="keys" onclick="toDisplay('0')">0</div>
+                    <div class="keys" onclick="toDisplay('.')">.</div>
+                    <div class="keys" onclick="equals()">=</div>
+                    <div class="keys" onclick="toDisplay('Ans')">Ans</div>
+    
+                </div>
+            </div>
+        </div>
+
+        <script src="JS/main.js"></script>
+    </body>
+
+</html>
